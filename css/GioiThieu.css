@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.GioiThieuGallery {
+	width: 100%;
+	border: 1px solid var(--nav-bg-body-heading-color);
+	text-align: center;
+}
+
+.GioiThieuGallery img {
+	width: 19%;
+	height: 100px;
+	padding: 5px;
+	filter: grayscale(100%);
+	transition: 1s;
+}
+
+.GioiThieuGallery img:hover {
+	filter: grayscale(0%);
+	transform: scale(1.1);
+}
+

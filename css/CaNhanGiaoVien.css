@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+#GiaoVienImage {
+	width: 80%;
+	height: 200px;
+}
+
+#GiaoVienImage img {
+	border: 2px solid black;
+	width: 90%;
+	height: 90%;
+}

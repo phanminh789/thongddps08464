@@ -1,0 +1,174 @@
+@charset "UTF-8";
+@import "CaNhanGiaoVien.css";
+@import "CaNhanHocSinh.css";
+@import "DangKy.css";
+@import "DangNhap.css";
+@import "Diem.css";
+@import "GioiThieu.css";
+@import "GopY.css";
+@import "HoiDap.css";
+@import "LichDay.css";
+@import "LichHoc.css";
+@import "LienHe.css";
+@import "SuKien.css";
+@import "TrangChu.css";
+
+:root {
+	--header-nav-text-color: white;
+	--nav-active-color: white;
+	--box-bg-color: #f0ffff;
+	--header-bg-color: #30a5b1;
+	--nav-bg-body-heading-color: #1b616d;
+	--nav-hover-color: #223848;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: "Tahoma";
+}
+
+/* phần đầu */
+.Header {
+	overflow: auto;
+	width: 100%;
+	height: 150px;
+	background-color: var(--header-bg-color);
+	color: var(--header-nav-text-color);
+	text-shadow: 2px 2px 5px black;
+	text-align: center;
+}
+
+/* hình logo trường */
+.Header img {
+	width: 100%;
+	height: 100%;
+}
+
+.Header .Logo {
+	width: 150px;
+	height: 150px;
+	float: left;
+}
+
+.Header .MinorLogo {
+	width: 350px;
+	height: 150px;
+	float: right;
+}
+
+/* thanh menu */
+.Nav {
+	overflow: auto;
+	background-color: var(--nav-bg-body-heading-color);
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* các mục menu */
+/* bên trái */
+.Nav a {
+	display: inline-block;
+	width: 120px;
+	height: 50px;
+	font-weight: bold;
+	float: left;
+	display: block;
+	color: var(--header-nav-text-color);
+	text-align: center;
+	font-size: 1rem;
+	padding: 15px 15px;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+/* bên phải */
+#DangNhap, #DangKy, #Diem, #LichDay, #LichHoc, #CaNhanGiaoVien, #CaNhanHocSinh, #DangXuat {
+	float: right;
+}
+
+/* các mục menu khi được chọn */
+.Nav a:hover:not(.Active) {
+	background-color: var(--nav-hover-color);
+	color: var(--header-nav-text-color);
+}
+
+.Nav a.Active {
+	background-color: var(--nav-active-color);
+	color: var(--nav-bg-body-heading-color);
+}
+
+/* phần thân */
+body {
+	margin: 0px;
+	overflow-y: scroll;
+}
+
+/* khung hình */
+.Column {
+	padding: 10px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	border: 1px solid var(--nav-bg-body-heading-color);
+	background-color: var(--box-bg-color);
+}
+
+.Column h1 {
+	color: var(--nav-hover-color);
+	padding-bottom: 10px;
+	border-bottom: 2px solid var(--nav-bg-body-heading-color);
+	margin: 0px;
+}
+
+.Column h2 {
+	color: var(--nav-bg-body-heading-color);
+}
+
+/* cột trái */
+.Left {
+	float: left;
+	width: 73%;
+	box-shadow: 3px 3px 5px var(--nav-bg-body-heading-color);
+}
+
+/* cột phải */
+.Right {
+	float: right;
+	width: 25%;
+	box-shadow: -4px 3px 5px var(--nav-bg-body-heading-color);
+}
+
+/* xóa float sau các cột */
+.Row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#PageContent, #MinorPageContent {
+	overflow-x: auto;
+}
+
+/* phần chân */
+.Footer {
+	background: var(--box-bg-color);
+	margin-top: 10px;
+	padding: 10px;
+	text-align: center;
+	border-top: 5px solid var(--nav-bg-body-heading-color);
+	font-size: 0.8em;
+}
+
+#PageContent {
+	display: none;
+	padding: 0px;
+}
+
+/* giao diện tự động điều chỉnh kích cỡ với nhiều loại thiết bị khác nhau */
+@media screen and (max-width: 800px) {
+	.Left, .Right, .Row, .Header.Logo, .Nav {
+  	width: 100%;
+  }
+}
