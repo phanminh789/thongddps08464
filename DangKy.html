@@ -16,7 +16,31 @@
 			<label><input type="radio" name="gender" value="male"> Nam </label>
 			<label><input type="radio" name="gender" value="female"> Nữ </label>
 		</div>
-		<br>
+	</div>
+	
+	<div class="Row">
+		<div class="Col-25">
+			<label for="ngaySinh">Ngày sinh</label>
+		</div>
+		<div class="Col-75">
+			<input class="FormControl" type="date" name="date" placeholder="mm/dd/yyyy">
+		</div>
+	</div>
+	
+	<div class="Row">
+		<div class="Col-25">
+			<label for="ngheNghiep">Nghề nghiệp</label>
+		</div>
+		<div class="Col-75">
+			<input class="FormControl" list="careers" name="career">
+				<datalist id="careers">
+					<option value="Nhân viên bán hàng">
+					<option value="Giáo viên">
+					<option value="Học sinh - Sinh viên">
+					<option value="Đầu bếp">
+					<option value="Lập trình viên">
+				</datalist>
+		</div>
 	</div>
 	
 	<div class="Row">
