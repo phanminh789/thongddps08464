@@ -27,6 +27,12 @@
 	font-family: "Tahoma";
 }
 
+audio {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}
+
 /* phần đầu */
 .Header {
 	overflow: auto;
