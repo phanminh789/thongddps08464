@@ -7,7 +7,7 @@ legend {
 }
 
 fieldset {
-	border: 1px solid var(#d1d1d1);
+	border: 0.5px solid #8c8c8c;
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;	
 	border-radius: 8px;
