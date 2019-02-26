@@ -47,12 +47,13 @@ audio {
 .Header h4 {
 	margin: 0px;
 	padding: 0px;
+	top: 20px;
 }
 
 .BigTitle {
 	margin: 0px;
 	padding: 0px;
-	font-size: 300%;
+	font-size: 400%;
 }
 
 /* hình logo trường */
