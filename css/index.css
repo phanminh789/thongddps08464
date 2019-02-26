@@ -44,6 +44,10 @@ audio {
 	text-align: center;
 }
 
+.BigTitle {
+	font-size: 150%;
+}
+
 /* hình logo trường */
 .Header img {
 	width: 100%;
