@@ -44,6 +44,11 @@ audio {
 	text-align: center;
 }
 
+.Header h4 {
+	margin: 0px;
+	padding: 0px;
+}
+
 .BigTitle {
 	margin: 0px;
 	padding: 0px;
