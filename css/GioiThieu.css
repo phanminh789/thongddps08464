@@ -49,7 +49,7 @@
 	background-color: rgba(0, 0, 0, .1);
 }
 
-span {
+.prev span, .next span {
 	display: table-cell;
 	vertical-align: middle;
 }
