@@ -23,7 +23,7 @@ function sendComment() {
 	
 	if (contentComment == "") {
 		alert("Nội dung góp ý không được trống");
-		$("#HoTen").focus();
+		$("#NoiDungGopY").focus();
         	return;
 	}
 	
