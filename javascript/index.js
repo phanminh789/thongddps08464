@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @author: Đinh Đạt Thông
  * */
 
@@ -10,7 +10,7 @@ $(document).ready(function() {
 	/* part 0: when the page is first loaded */
 	// we load the page TrangChu after all document has been loaded
 	loadPageContent("Xin chào", "#TrangChu", "TrangChu.html");
-	$("#MinorPageContent").load("../" + "SuKien.html");
+	$("#MinorPageContent").load("SuKien.html");
 	
 	// we also hide some items that required login
 	$(afterLoginStudent + ", " + afterLoginTeacher + ", #DangXuat").hide();	
@@ -84,7 +84,7 @@ function loadPageContent(tabTitle, idNavItemActive, fileName) {
 	$(allNavButtonID).removeClass("Active");
 	$(idNavItemActive).addClass("Active");
 	$("#PageContent").slideUp("fast", function() {
-		$("#PageContent").load("../" + fileName, function() {
+		$("#PageContent").load(fileName, function() {
 			$("#PageContent").slideDown("slow");
 		});
 	});

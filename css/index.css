@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 @import "CaNhanGiaoVien.css";
 @import "CaNhanHocSinh.css";
 @import "DangKy.css";
@@ -10,7 +10,6 @@
 @import "LichDay.css";
 @import "LichHoc.css";
 @import "LienHe.css";
-@import "SuKien.css";
 @import "TrangChu.css";
 
 :root {
