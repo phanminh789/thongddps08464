@@ -18,6 +18,7 @@ function sendComment() {
 	
 	if (idPattern.test(id) == false) {
 		alert("Số chứng minh không hợp lệ");
+		$("#CMND").focus();
         	return;
 	}
 	
