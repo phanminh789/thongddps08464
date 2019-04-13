@@ -1,29 +1,17 @@
 // this function checks for input data and create an account for user
 function doSignUp() {
 	// variables
-	
-	// program
-	// we should checks for the wholeness of input
-	
-	// then we check for the validable of the input data
-	
-	// then we inform user after successfulness
-	// variables
-	
-	var fullName = $("#HoTen").val();
+	var fullName = $("#TenTaiKhoan").val();
 	var career = $("#List").val();
 	var id = $("#CMND").val();
 	var email = $("#Email").val();
 	var password = $("#MatKhau").val();
 	
-	
-	
-	
 	// program
 	// check for emptyness of textfields and patterns
 	if (fullName == "") {
 		alert("Tên không được trống");
-		$("#HoTen").focus();
+		$("#TenTaiKhoan").focus();
 		return;
 	}
 	
