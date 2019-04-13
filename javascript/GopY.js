@@ -13,21 +13,21 @@ function sendComment() {
 	if (fullName == "") {
 		alert("Tên không được trống");
 		$("#HoTen").focus();
-        	return;
+        return;
 	}
 	
 	if (idPattern.test(id) == false) {
 		alert("Số chứng minh không hợp lệ");
 		$("#CMND").focus();
-        	return;
+        return;
 	}
 	
 	if (contentComment == "") {
 		alert("Nội dung góp ý không được trống");
 		$("#NoiDungGopY").focus();
-        	return;
+        return;
 	}
 	
-       	alert("Gửi góp ý thành công");
+	alert("Gửi góp ý thành công");
 };
 // end of sendComment
