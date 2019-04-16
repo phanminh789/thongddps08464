@@ -11,6 +11,7 @@
 @import "LichHoc.css";
 @import "LienHe.css";
 @import "TrangChu.css";
+@import "Clock.css";
 
 :root {
 	--header-nav-text-color: white;
